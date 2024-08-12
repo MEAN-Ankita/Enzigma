@@ -1,0 +1,7 @@
+<div *ngFor="let task of tasks">
+    <h3>{{ task.title }}</h3>
+    <input type="checkbox" [checked]="task.completed" disabled />
+    <button (click)="editTask(task._id)">Edit</button>
+    <button (click)="deleteTask(task._id)">Delete</button>
+  </div>
+  
